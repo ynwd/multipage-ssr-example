@@ -1,3 +1,4 @@
+import { createElement as h } from "https://esm.sh/react@18.1.0";
 import application, {
   response,
 } from "https://deno.land/x/fastro@v0.58.2/server/mod.ts";
