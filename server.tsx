@@ -2,8 +2,8 @@
 import { createElement as h } from "https://esm.sh/react@18.1.0";
 import application, {
   response,
-} from "https://deno.land/x/fastro@v0.58.2/server/mod.ts";
-import ssr from "https://deno.land/x/fastro@v0.58.2/server/ssr.ts";
+} from "https://raw.githubusercontent.com/fastrodev/fastro/main/server/mod.ts";
+import ssr from "https://raw.githubusercontent.com/fastrodev/fastro/main/server/ssr.ts";
 import App from "./app.tsx";
 import Hello from "./hello/app.tsx";
 
