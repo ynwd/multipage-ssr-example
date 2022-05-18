@@ -1,9 +1,8 @@
-// @deno-types="https://cdn.esm.sh/v78/@types/react@18.0.9/react.d.ts"
-import { createElement as h } from "https://esm.sh/react@18.1.0";
 import application, {
+  h,
   response,
-} from "https://deno.land/x/fastro@v0.58.3/server/mod.ts";
-import ssr from "https://deno.land/x/fastro@v0.58.3/server/ssr.ts";
+} from "https://deno.land/x/fastro@v0.58.4/server/mod.ts";
+import ssr from "https://deno.land/x/fastro@v0.58.4/server/ssr.ts";
 import App from "./app.tsx";
 import Hello from "./hello/app.tsx";
 
