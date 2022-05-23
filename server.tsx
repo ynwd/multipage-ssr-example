@@ -1,8 +1,8 @@
 import application, {
   h,
   response,
-} from "https://deno.land/x/fastro@v0.58.4/server/mod.ts";
-import ssr from "https://deno.land/x/fastro@v0.58.4/server/ssr.ts";
+} from "https://deno.land/x/fastro@v0.59.0/server/mod.ts";
+import ssr from "https://deno.land/x/fastro@v0.59.0/server/ssr.ts";
 import App from "./app.tsx";
 import Hello from "./hello/app.tsx";
 
@@ -15,6 +15,7 @@ const app = application()
     return response()
       .ssr(appPage)
       .title("Hello world")
+      .meta(`name="viewport" content="width=device-width"`)
       .render();
   })
   .page("/hello", helloPage, (req: Request) => {
