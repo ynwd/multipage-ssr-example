@@ -1,8 +1,8 @@
 import application, {
   h,
   response,
-} from "https://deno.land/x/fastro@v0.59.0/server/mod.ts";
-import ssr from "https://deno.land/x/fastro@v0.59.0/server/ssr.ts";
+} from "https://deno.land/x/fastro@v0.59.2/server/mod.ts";
+import ssr from "https://deno.land/x/fastro@v0.59.2/server/ssr.ts";
 import App from "./app.tsx";
 import Hello from "./hello/app.tsx";
 

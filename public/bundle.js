@@ -6,7 +6,7 @@ var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require
   throw new Error('Dynamic require of "' + x + '" is not supported');
 });
 
-// deno:https://cdn.esm.sh/v78/react@18.1.0/deno/react.js
+// deno:https://esm.sh/v82/react@18.1.0/deno/react.js
 var q = Object.create;
 var $ = Object.defineProperty;
 var A = Object.getOwnPropertyDescriptor;
@@ -283,7 +283,7 @@ var { Children: pe, Component: ye, Fragment: de, Profiler: _e, PureComponent: me
 var { default: ce, ...ie } = U;
 var Ye = F.default ?? ce ?? ie;
 
-// deno:https://cdn.esm.sh/v78/scheduler@0.22.0/deno/scheduler.js
+// deno:https://esm.sh/v82/scheduler@0.22.0/deno/scheduler.js
 var __setImmediate$ = (cb, ...args) => setTimeout(cb, 0, ...args);
 var U2 = Object.create;
 var $2 = Object.defineProperty;
@@ -531,7 +531,7 @@ var { unstable_now: se, unstable_IdlePriority: ce2, unstable_ImmediatePriority: 
 var { default: le, ...ie2 } = V;
 var Te2 = S.default ?? le ?? ie2;
 
-// deno:https://cdn.esm.sh/v78/react-dom@18.1.0/deno/react-dom.js
+// deno:https://esm.sh/v82/react-dom@18.1.0/deno/react-dom.js
 var wa = Object.create;
 var nu = Object.defineProperty;
 var Sa = Object.getOwnPropertyDescriptor;
@@ -6017,7 +6017,7 @@ var { __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: Tf, createPortal: Mf, 
 var { default: Nf, ...zf } = ga;
 var Wf = va.default ?? Nf ?? zf;
 
-// deno:https://cdn.esm.sh/v78/react-dom@18.1.0/deno/client.js
+// deno:https://esm.sh/v82/react-dom@18.1.0/deno/client.js
 var f = Object.create;
 var s = Object.defineProperty;
 var y = Object.getOwnPropertyDescriptor;
@@ -6049,16 +6049,15 @@ var { createRoot: P, hydrateRoot: $3 } = R2;
 var { default: C2, ...N } = R2;
 var v = l.default ?? C2 ?? N;
 
-// deno:file:///Users/pro/Documents/deno/multipage-ssr-example/hello/app.tsx
+// deno:file:///Users/pro/Documents/deno/multipage-ssr-example//app.tsx
 var App = () => {
-  const [count, setCount] = Ye.useState(0);
-  return /* @__PURE__ */ Ye.createElement("div", null, /* @__PURE__ */ Ye.createElement("h1", null, "Hello World"), /* @__PURE__ */ Ye.createElement("button", {
-    onClick: () => setCount(count + 1)
-  }, "Click the \u{1F995}"), /* @__PURE__ */ Ye.createElement("p", null, "You clicked the \u{1F995} ", count, " times"));
+  return /* @__PURE__ */ Ye.createElement("div", null, /* @__PURE__ */ Ye.createElement("h1", null, "Hello World"), /* @__PURE__ */ Ye.createElement("a", {
+    href: "/hello"
+  }, "hello"));
 };
 var app_default = App;
 
-// deno:file:///Users/pro/Documents/deno/multipage-ssr-example/hello/.hydrate.tsx
+// deno:file:///Users/pro/Documents/deno/multipage-ssr-example//.hydrate.tsx
 var container = document.getElementById("root");
 var root = P(container);
 root.render(/* @__PURE__ */ Ye.createElement(app_default, null));
